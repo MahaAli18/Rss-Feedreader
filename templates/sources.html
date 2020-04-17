@@ -1,0 +1,91 @@
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Sources</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="/static/css/home.css" />
+    <link rel="stylesheet" href="/static/css/source.css" />
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ"
+        crossorigin="anonymous">
+      
+    
+</head>
+<style>
+    body{
+        background-image: url(../static/css/images/img.jpg);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+}
+</style>
+<body>
+
+    <!--Starting of navbar 1-->
+    <nav class="navbar navbar-toggleable-sm navbar-inverse nav1">
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <a href="home.html" class="navbar-brand ml-4">FeedReader</a>
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a href="/home" class="nav-link nav-log">Home</a>
+                </li>
+                <li class="nav-item ">
+                    <a href="/" class="nav-link nav-log">Articles</a>
+                </li>
+
+                <li class="nav-item ">
+                    <a href="/sources" class="nav-link nav-log">AddFeed</a>
+                </li>
+                <li class="nav-item ">
+                        <a href="/logout" class="nav-link nav-log">Logout</a>
+                    </li>
+            </ul>
+        </div>
+    </nav>
+    
+      <br><br><br><br><br>
+    <div class="align-center">
+            <div class="card  card-form text-center" style="background-color:rgba(90, 85, 79, 0.356)">
+              <div class="card-block">
+                <h3 style="color: azure; font-family: 'Times New Roman', Times, serif;">MAKE YOUR OWN CUSTOMIZE FEED</h3>
+                <hr>
+                <form method="POST">
+                        <input name="feed" style="border-radius: 10px;">
+                        <button type="submit" style="background-color: black; color: azure; border: 0px; border-radius:10px;">Add feed</button>
+                    </form>
+                    {% for source in sources %}
+                    <div>
+                        <a href="{{ source.link }}" style="color: azure;">{{ source.title }}</a>
+                    </div>
+                    {% endfor %}
+              </div>
+            </div>
+          </div>
+    <!--Ending of navbar 1-->
+    <!-- <div>
+    <form method="POST">
+        <input name="feed">
+        <button type="submit">Add feed</button>
+    </form>
+    {% for source in sources %}
+    <div>
+        <a href="{{ source.link }}">{{ source.title }}</a>
+    </div>
+    {% endfor %}
+</div> -->
+
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

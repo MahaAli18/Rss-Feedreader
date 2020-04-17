@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+/*styling of login form start */
+body {
+    font-family: 'Roboto' , sans-serif;
+    /* background: url(/images/adult-beautiful-blur-787929.jpg) no-repeat center center fixed; */
+    background-size:cover; 
+    
+    
+}
+
+.main-section{
+   margin:0 auto;
+   margin-top: 130px;
+   padding:0;
+}
+.modal-content{
+    background-color: rgba(102, 99, 101, 0.637)!important;
+    opacity: .85;
+    padding: 0 18px;
+    box-shadow: 0px 0px 3px #6d6161;
+}
+.user-img{
+    margin-top: -50px;
+    margin-bottom: 45px;
+}
+.user-img img{
+    height:100px;
+    width:100px;
+    border-radius:25px!important;
+    box-shadow: 0px 0px 2px #413434!important;
+
+}
+.form-group{
+    margin-bottom: 25px!important;
+}
+.form-group input{
+    height:42px;
+    border:0;
+    border-radius:20px;
+    font-size: 18px;
+    padding-left: 54px;
+}
+.form-group::before{
+    font-family: 'Font Awesome\ 5 Free'!important;
+    content:"\f007"!important;
+    position: absolute;
+    font-size: 20px;
+    color: #555e60;
+    left:28px;
+    padding-top: 4px!important;
+}
+.form-group:last-of-type::before{
+    content: "\f023"!important;
+}
+button{
+    width: 40%;
+    margin: 5px 0 25px;
+}
+.btn{
+    font-size:19px;
+    color:rgb(226, 210, 210);
+    background-color:rgba(19, 9, 13, 0.904);
+    border-bottom: 4px solid rgba(87, 3, 32, 0.582);
+}
+.btn:hover, .btn:focus{
+    background-color: rgba(124, 16, 54, 0.884);
+    border-bottom: 4px solid rgba(39, 26, 31, 0.753);
+
+}
+.svg-inline--fa{
+    font-size: 20px;
+    margin-right: 7px;
+}
+.forgot{
+    padding: 8px 0 25px;
+    
+}
+.forgot a{
+  color:#01090c!important;
+}
+ /*styling of login form end */
